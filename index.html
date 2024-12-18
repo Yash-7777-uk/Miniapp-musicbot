@@ -53,7 +53,7 @@
       document.getElementById("audio-player").src = songUrl;
 
       // Fetch joined users
-      fetch(`/api/join-room?room_id=${roomId}&user_id=${userId}`)
+      fetch(`https://miniapp-musicbot.onrender.com/api/join-room?room_id=${roomId}&user_id=${userId}`)
         .then(res => res.json())
         .then(data => {
           const userList = document.getElementById("users");
